@@ -57,6 +57,12 @@ To start contributing, please follow these steps:
 - Be respectful and considerate in your communications with other contributors.
 - Ensure that your pull request description is clear and provides context for the proposed changes.
 
+## Adding Vulgar or Sensitive Terms
+
+- Clearly label entries that contain vulgar or sensitive language.
+- Provide context and usage examples to help users understand the term’s significance and usage.
+- Respect community standards and ensure that the inclusion of such terms serves an educational purpose.
+
 ## Code of Conduct
 
 We are committed to fostering an inclusive and respectful community. Please read and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
