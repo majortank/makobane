@@ -1,5 +1,5 @@
 // frontend/src/components/Search.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { getWords } from '../services/firebase';
 
 const Search = () => {
@@ -17,17 +17,17 @@ const Search = () => {
   }, []);
 
   // Handle search logic
-  const handleSearch = () => {
+  const handleSearch = useCallback(() => {
     const filteredWords = words.filter(word =>
       word.word.toLowerCase().includes(query.toLowerCase())
     );
     setResults(filteredWords);
-  };
+  }, [query, words]);
 
   // Trigger search whenever the query changes
   useEffect(() => {
     handleSearch();
-  }, [query]);
+  }, [handleSearch]);
 
   return (
     <div>
